@@ -52,6 +52,7 @@ export default () => {
         <Space size="large" style={{ lineHeight: '16px' }}>
           <Dropdown overlay={langMenu} trigger={['click']} arrow>
             <Space className={styles.pointer}>
+              <i className="iconfont icon-wangluo"></i>
               {LANG_MAP.find(item => langSelectedKeys[0] === item.key)?.label}
               <DownOutlined />
             </Space>
