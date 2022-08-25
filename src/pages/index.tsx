@@ -1,4 +1,4 @@
-import yayJpg from '../assets/yay.jpg';
+import yayJpg from '@/assets/image/yay.jpg';
 
 export default function HomePage() {
   return (

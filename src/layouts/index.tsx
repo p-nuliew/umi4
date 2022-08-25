@@ -1,21 +1,20 @@
-import { Link, Outlet } from 'umi';
-import styles from './index.less';
+import { ConfigProvider } from 'antd'
+// import { Provider } from 'react-redux'
+// import { IRouteComponentProps } from 'umi'
+import zhCN from 'antd/es/locale/zh_CN'
 
-export default function Layout() {
+import './index.less'
+import Container from './container'
+
+export default () => {
+
+
   return (
-    <div className={styles.navs}>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/docs">Docs</Link>
-        </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
-        </li>
-      </ul>
-      <Outlet />
-    </div>
-  );
+    // <ConfigProvider locale={zhCN}>
+    //   <Provider store={store}>
+    //     <Container>{children}</Container>
+    //   </Provider>
+    // </ConfigProvider>
+    <Container></Container>
+  )
 }

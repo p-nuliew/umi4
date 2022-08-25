@@ -1,0 +1,36 @@
+:global{
+  .ant-layout-header{
+    color: #fff;
+  }
+  .ant-tabs {
+    color: #fff;
+    .ant-tabs-nav{
+      margin: 0 0 0 0;
+      &::before{
+        border-bottom: none;
+      }
+      .ant-tabs-tab{
+        padding: 20px 5px;
+      }
+    }
+  }
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .pointer{
+    cursor: pointer;
+  }
+  img {
+    width: 150px;
+    height: 30px;
+    margin-right: 70px;
+  }
+  .body {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
