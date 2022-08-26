@@ -4,6 +4,7 @@
 import { IApi } from 'umi';
 
 export default (api: IApi) => {
+  // 添加iconfont在线地址
   api.modifyHTML(($) => {
     $('head').append([
       `<link rel="stylesheet" href="//at.alicdn.com/t/c/font_3591347_7kfg12q5abm.css" />`,

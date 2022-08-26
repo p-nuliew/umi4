@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import { Layout } from 'antd';
+import { Layout, DatePicker } from 'antd';
 import { Tabs, Dropdown, Menu, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
+import { FormattedMessage } from 'umi';
+import { SelectLang } from '@/components';
 
-import { HEADER_NAV_MAP, LANG_MAP, LangKey } from './canstant';
+import { HEADER_NAV_MAP } from './canstant';
 import styles from './index.less';
 
 const { TabPane } = Tabs;
@@ -24,23 +25,9 @@ const menu = (
 )
 
 export default () => {
-  const [langSelectedKeys, setLangSelectedKeys] = useState([LangKey.Cn])
-
   const onChange = (key: string) => {
     console.log(key);
   };
-
-  const onLangClick = ({ key }) => {
-    setLangSelectedKeys([key])
-  }
-
-  const langMenu = (
-    <Menu
-      items={LANG_MAP}
-      selectedKeys={langSelectedKeys}
-      onClick={onLangClick}
-    />
-  )
 
   return (
     <Layout.Header className={styles.header}>
@@ -50,13 +37,7 @@ export default () => {
           {HEADER_NAV_MAP.map((x) => (<TabPane tab={x} key={x} />))}
         </Tabs>
         <Space size="large" style={{ lineHeight: '16px' }}>
-          <Dropdown overlay={langMenu} trigger={['click']} arrow>
-            <Space className={styles.pointer}>
-              <i className="iconfont icon-wangluo"></i>
-              {LANG_MAP.find(item => langSelectedKeys[0] === item.key)?.label}
-              <DownOutlined />
-            </Space>
-          </Dropdown>
+          <SelectLang />
           <Dropdown overlay={menu} trigger={['click']} arrow>
             <Space className={styles.pointer}>
               13566106399@163.com

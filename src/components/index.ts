@@ -1,0 +1,1 @@
+export { default as SelectLang } from './select-lang'
