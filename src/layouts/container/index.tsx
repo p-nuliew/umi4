@@ -1,18 +1,18 @@
-import React from 'react'
 import { Layout } from 'antd'
-// import { Provider } from 'react-redux'
-// import { IRouteComponentProps } from 'umi'
-import zhCN from 'antd/es/locale/zh_CN'
-
+import { FormattedMessage, Outlet } from 'umi';
 
 import Header from './header'
 
+const { Content, Footer, Sider } = Layout
 
 export default () => {
   return (
     <Layout>
       <Header />
-      {/* <Content>2</Content> */}
+      <Content>
+        <FormattedMessage id="welcome" />
+        <Outlet />
+      </Content>
     </Layout>
   )
 }

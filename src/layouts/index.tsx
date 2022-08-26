@@ -7,14 +7,7 @@ import './index.less'
 import Container from './container'
 
 export default () => {
-
-
   return (
-    // <ConfigProvider locale={zhCN}>
-    //   <Provider store={store}>
-    //     <Container>{children}</Container>
-    //   </Provider>
-    // </ConfigProvider>
     <Container></Container>
   )
 }

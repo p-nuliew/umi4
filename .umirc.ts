@@ -10,4 +10,16 @@ export default {
     title: false,
     useLocalStorage: true,
   },
+  history: {
+    type: 'hash'
+  },
+  routes: [
+    {
+      path: '/',
+      component: '@/layouts/index',
+      redirect: '/index',
+    },
+    { path: '/index', component: 'index' },
+    { path: '/docs', component: 'docs' },
+  ],
 };
