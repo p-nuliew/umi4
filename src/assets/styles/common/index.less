@@ -1,0 +1,32 @@
+@import './distances.less';
+@import './font.less';
+@import './layout.less';
+@import './color.less';
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@mobileScreen: 767px;
+@ipadScreen: 1024px;
+@pcScreen: 1920px;
+
+@media screen and (max-width: @mobileScreen) {
+
+}

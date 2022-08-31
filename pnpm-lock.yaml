@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': ^18.0.0
   '@umijs/plugins': ^4.0.15
   antd: ^4.22.7
+  classnames: ^2.3.1
   swiper: ^8.3.2
   typescript: ^4.1.2
   umi: ^4.0.13
@@ -20,6 +21,7 @@ dependencies:
 devDependencies:
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
+  classnames: 2.3.1
   typescript: 4.7.4
 
 packages:
@@ -2559,7 +2561,6 @@ packages:
 
   /classnames/2.3.1:
     resolution: {integrity: sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==}
-    dev: false
 
   /click-to-react-component/1.0.8_xj3raazhip6ee3gqogrlbmzd4q:
     resolution: {integrity: sha512-YBNYOp00udy+NBEnUmM/3Df0Yco1iHNQ8k0ltlJVcDYK9AuYt14xPoJicBh/BokLqbzkci1p+pbdY5r4JXZC4g==}

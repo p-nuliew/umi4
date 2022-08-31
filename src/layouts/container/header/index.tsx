@@ -30,24 +30,24 @@ export default () => {
   };
 
   return (
-    <Layout.Header className={styles.header}>
-      <img src="https://nd-valid-data-bintest1.oss-cn-hangzhou.aliyuncs.com/aleo/aleopool.png" alt="logo" className={styles.pointer} />
-      <div className={styles.body}>
-        <Tabs defaultActiveKey={HEADER_NAV_MAP[0]} hideAdd={true} onChange={onChange}>
-          {HEADER_NAV_MAP.map((x) => (<TabPane tab={x} key={x} />))}
-        </Tabs>
-        <Space size="large" style={{ lineHeight: '16px' }}>
-          <SelectLang />
-          <Dropdown overlay={menu} trigger={['click']} arrow>
-            <Space className={styles.pointer}>
-              13566106399@163.com
-              <DownOutlined />
-            </Space>
-          </Dropdown>
-        </Space>
+    <Layout.Header>
+      <div className={styles.header}>
+        <img src="https://nd-valid-data-bintest1.oss-cn-hangzhou.aliyuncs.com/aleo/aleopool.png" alt="logo" className={styles.pointer} />
+        <div className={styles.body}>
+          <Tabs defaultActiveKey={HEADER_NAV_MAP[0]} hideAdd={true} onChange={onChange}>
+            {HEADER_NAV_MAP.map((x) => (<TabPane tab={x} key={x} />))}
+          </Tabs>
+          <Space size="large" style={{ lineHeight: '16px' }}>
+            <SelectLang />
+            <Dropdown overlay={menu} trigger={['click']} arrow>
+              <Space className={styles.pointer}>
+                13566106399@163.com
+                <DownOutlined />
+              </Space>
+            </Dropdown>
+          </Space>
+        </div>
       </div>
-
-
     </Layout.Header>
   )
 }

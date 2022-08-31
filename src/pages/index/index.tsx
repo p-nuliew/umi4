@@ -1,9 +1,15 @@
 import yayJpg from '@/assets/image/yay.jpg';
+import { FormattedMessage } from 'umi';
+import { DatePicker } from 'antd';
+import cx from 'classnames';
+
+import styles from './index.less';
 
 export default function HomePage() {
   return (
     <div>
-      <h2>Yay! Welcome to umi!</h2>
+      <div className={cx(styles.wel, 'ml1', 'H1-Bold')}><FormattedMessage id="welcome" /></div>
+      <DatePicker />
       <p>
         <img src={yayJpg} width="388" />
       </p>

@@ -1,5 +1,5 @@
 import { Layout } from 'antd'
-import { FormattedMessage, Outlet } from 'umi';
+import { Outlet } from 'umi';
 import { Banner } from '@/components'
 import BANNER_1 from '@/assets/image/banner1.jpg';
 import BANNER_2 from '@/assets/image/banner2.jpg';
@@ -14,7 +14,6 @@ export default () => {
       <Header />
       <Banner images={[BANNER_1, BANNER_2]} />
       <Content>
-        <FormattedMessage id="welcome" />
         <Outlet />
       </Content>
     </Layout>
