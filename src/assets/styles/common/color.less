@@ -1,30 +1,19 @@
-.G1 {
-  color: #000000;
+@G1: #000000;
+@G2: #131415;
+@G3: #606266;
+@G4: #91959A;
+@G5: #B0B4BB;
+@G6: #C7CBD0;
+@G7: #D7DADD;
+@G8: #E7E9ED;
+@G9: #F6F7F8;
+@G10: #FFFFFF;
+
+.generate-color(@i: 1) when(@i <= 10) {
+  .G@{i} {
+    color: '@G'@i
+  }
+  .generate-color(@i + 1);
 }
-.G2 {
-  color: #131415;
-}
-.G3 {
-  color: #606266;
-}
-.G4 {
-  color: #91959A;
-}
-.G5 {
-  color: #B0B4BB;
-}
-.G6 {
-  color: #C7CBD0;
-}
-.G7 {
-  color: #D7DADD;
-}
-.G8 {
-  color: #E7E9ED;
-}
-.G9 {
-  color: #F6F7F8;
-}
-.G10 {
-  color: #FFFFFF;
-}
+
+.generate-color();

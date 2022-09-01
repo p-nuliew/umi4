@@ -6,7 +6,7 @@ export default {
     antd: true, // 如果项目依赖中包含 `antd`，则默认为 true
     baseNavigator: true,
     baseSeparator: '-',
-    default: 'zh-TW', // 默认使用 src/locales/zh-CN.ts 作为多语言文件
+    default: 'zh-TW', // 默认使用 src/locales/zh-TW.ts 作为多语言文件
     title: false,
     useLocalStorage: true,
   },
