@@ -1,3 +1,5 @@
+@import '~@/styles/themes/default.less';
+
 @G1: #000000;
 @G2: #131415;
 @G3: #606266;
@@ -9,11 +11,8 @@
 @G9: #F6F7F8;
 @G10: #FFFFFF;
 
-.generate-color(@i: 1) when(@i <= 10) {
-  .G@{i} {
-    color: '@G'@i
-  }
-  .generate-color(@i + 1);
-}
+@baseDistance: 8px;
 
-.generate-color();
+@mobileScreen: 767px;
+@ipadScreen: 1024px;
+@pcScreen: 1920px;

@@ -1,7 +1,29 @@
+@import '~@/styles/themes/vars.less';
+
+body {
+  font-family: @PingFang;
+}
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.generate-color(@i: 1) when(@i <= 10) {
+  .G@{i} {
+    color: '@G'@i
+  }
+  .generate-color(@i + 1);
+}
+.generate-color();
+
 // ma mh mv mt mb ml mr
 // pa ph pv pt pb pl pr
-@baseDistance: 8px;
-
 .generate-mp(@i: 1) when(@i <=10) {
   .ma@{i} {
     margin: @i * @baseDistance;
@@ -65,5 +87,5 @@
 
   .generate-mp(@i + 1);
 }
-
 .generate-mp();
+
