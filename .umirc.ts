@@ -5,12 +5,12 @@ export default {
   title: 'Aleo Pool',
   plugins: ['@umijs/plugins/dist/locale', '@umijs/plugins/dist/antd'],  // 单独安装@umijs/plugins后，启用 i18n、antd 插件
   locale: {
-    antd: true, // 如果项目依赖中包含 `antd`，则默认为 true
-    baseNavigator: true,
+    antd: true, // antd国际化。如果项目依赖中包含 `antd`，则默认为 true
     baseSeparator: '-',
-    default: 'zh-TW', // 默认使用 src/locales/zh-TW.ts 作为多语言文件
     title: false,
     useLocalStorage: true,
+    baseNavigator: true,
+    default: 'zh-TW', // 使用 src/locales/zh-TW.ts 作为多语言文件
   },
   antd: {
     // configProvider

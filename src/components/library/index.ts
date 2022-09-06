@@ -6,6 +6,7 @@ import Space from './Space';
 import Layout from './Layout';
 import DatePicker from './DatePicker';
 import ConfigProvider from './ConfigProvider';
+import Button from './Button';
 
 
 export {
@@ -16,4 +17,5 @@ export {
   Layout,
   DatePicker,
   ConfigProvider,
+  Button,
 }
