@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Dropdown, Menu, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import { setLocale } from 'umi';
+import { Menu, Dropdown, Space} from '@/components/library';
 
 import { LANG_MAP, LangKey } from './canstant';
 import styles from './index.less';

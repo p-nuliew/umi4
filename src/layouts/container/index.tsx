@@ -1,4 +1,4 @@
-import { Layout } from 'antd'
+import { Layout } from '@/components/library'
 import { Outlet } from 'umi';
 import { Banner } from '@/components'
 import BANNER_1 from '@/assets/image/banner1.jpg';

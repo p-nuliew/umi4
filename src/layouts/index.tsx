@@ -1,13 +1,18 @@
-import { ConfigProvider } from 'antd'
 // import { Provider } from 'react-redux'
 // import { IRouteComponentProps } from 'umi'
-import zhCN from 'antd/es/locale/zh_CN'
+import zhTW from 'antd/es/locale/zh_TW'
+import { ConfigProvider } from '@/components/library';
+import { getLocale } from 'umi';
 
 import './index.less'
 import Container from './container'
 
+console.log('getLocale(): ', getLocale());
+
 export default () => {
   return (
-    <Container></Container>
+    // <ConfigProvider locale={getLocale()}>
+      <Container></Container>
+    // </ConfigProvider>
   )
 }
