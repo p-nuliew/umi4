@@ -1,19 +1,12 @@
-// import { Provider } from 'react-redux'
-// import { IRouteComponentProps } from 'umi'
-import zh_TW from 'antd/es/locale/zh_TW'
-import en_US from 'antd/es/locale/en_US'
-import { ConfigProvider } from '@/components/library';
-import { getLocale } from 'umi';
+import { Layout } from '@/components/Library'
+import { Outlet, useLocation } from 'umi';
 
-import './index.less'
-import Container from './container'
+import Dashboard from './Dashboard';
 
-console.log('getLocale(): ', getLocale());
-
-export default () => {
-  return (
-    // <ConfigProvider locale={getLocale()}>
-      <Container></Container>
-      // </ConfigProvider>
-  )
+export default function HWLayout() {
+  const location = useLocation()
+  console.log('location: ', location);
+  const isDashboard = location.pathname.includes('/dashboard')  // 控制面板
+  console.log('isDashboard: ', isDashboard);
+  return isDashboard ? <Dashboard /> : <Outlet />
 }

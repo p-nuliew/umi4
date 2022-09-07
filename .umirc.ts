@@ -27,13 +27,10 @@ export default {
     type: 'hash'
   },
   routes: [
-    {
-      path: '/',
-      component: '@/layouts/index',
-      redirect: '/index',
-    },
-    { path: '/index', component: 'index' },
-    { path: '/docs', component: 'docs' },
+    { path: '/', redirect: '/index' },
+    { path: '/index', component: 'Index' },
+    { path: '/dashboard', component: '@/layouts/Dashboard', redirect: '/dashboard/index' },
+    { path: '/dashboard/index', component: 'Dashboard/Index' },
   ],
   // Theme for antd
   // https://ant.design/docs/react/customize-theme

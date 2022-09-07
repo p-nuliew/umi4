@@ -1,6 +1,6 @@
 import { DownOutlined } from '@ant-design/icons';
 import { SelectLang } from '@/components';
-import { Menu, Tabs, Dropdown, Space, Layout } from '@/components/library';
+import { Menu, Tabs, Dropdown, Space, Layout } from '@/components/Library';
 
 import { HEADER_NAV_MAP } from './canstant';
 import styles from './index.less';

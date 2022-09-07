@@ -36,4 +36,4 @@ pnpm build
 
 ## 注意点
 
-* 新建组件流程：小写命名文件名，多单词用'-'链接，文件夹下新建 `index.{jsx|tsx}` 和 `index.less`。
+* 新建组件流程：大驼峰命名文件名，文件夹下新建 `index.{jsx|tsx}` 和 `index.less`。
